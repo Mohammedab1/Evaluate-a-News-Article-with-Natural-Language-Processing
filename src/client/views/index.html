@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Test</title>
+
+    </head>
+
+    <body>
+
+        <header class="">
+            <div >
+                Natural Language Processing
+            </div>
+            <div>
+                navigation
+            </div>
+        </header>
+        <main>
+            <section>
+                <form class="" onsubmit="return Client.handleSubmit(event)">
+                  <label for="name">Enter a URL</label>
+                    <input id="name" type="text" name="input" onblur="onBlur()" value="" placeholder="">
+                    <div>type a URL</div>
+                    <input class="" type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                </form>
+            </section>
+            <section class="">
+                <div id="results"> </div>
+                <div id="model"></div>
+                <div id="subjectivity"></div>
+                <div id="confidence"></div>
+                <div id="irony"></div>
+                <div id="polarity"> </div>
+            </section>
+        </main>
+
+        <footer>
+        </footer>
+
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+           </script>
+    </body>
+</html>
