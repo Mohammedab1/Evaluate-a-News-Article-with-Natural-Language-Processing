@@ -20,7 +20,6 @@ const sendURL = async (url, data) => {
     document.getElementById("irony").innerHTML = "Irony: " + Data.irony;
     document.getElementById("Score").= "Sconre: " + Data.score_tag;
 
-    // console.log(Data.polarity);
   } catch (err) {
     console.log("Error: "+ err);
   }
