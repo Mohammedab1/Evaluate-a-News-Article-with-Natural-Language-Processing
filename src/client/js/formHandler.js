@@ -18,7 +18,7 @@ const sendURL = async (url, data) => {
     document.getElementById("confidence").innerHTML = "Confidence is : " + Data.confidence;
     document.getElementById("subjectivity").innerHTML = "The Subjectivity: " + Data.subjectivity;
     document.getElementById("irony").innerHTML = "Irony: " + Data.irony;
-    document.getElementById("polarity").innerHTML= "Polarity: " + Data.polarity;
+    document.getElementById("Score").= "Sconre: " + Data.score_tag;
 
     // console.log(Data.polarity);
   } catch (err) {
@@ -29,7 +29,7 @@ function handleSubmit(event) {
   event.preventDefault();
 console.log("123");
   let text = document.getElementById("name").value;
-  sendURL("http://localhost:3000/text")
+  sendURL('http://localhost:3000/text', text);
 
 }
 
