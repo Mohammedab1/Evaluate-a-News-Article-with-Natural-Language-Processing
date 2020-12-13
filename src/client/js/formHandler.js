@@ -18,7 +18,7 @@ const sendURL = async (url, data) => {
     document.getElementById("confidence").innerHTML = "Confidence is : " + Data.confidence;
     document.getElementById("subjectivity").innerHTML = "The Subjectivity: " + Data.subjectivity;
     document.getElementById("irony").innerHTML = "Irony: " + Data.irony;
-    document.getElementById("Score").= "Sconre: " + Data.score_tag;
+    document.getElementById("Score").innerHTML= "Sconre: " + Data.score_tag;
 
   } catch (err) {
     console.log("Error: "+ err);
