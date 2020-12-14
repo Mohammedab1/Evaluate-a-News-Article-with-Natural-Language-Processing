@@ -16,7 +16,7 @@ describe('The Validater should be a function' , () => {
 describe('The Validater should contain valid url' , () => {
     let validurl = "https://www.toptal.com";
     test('Should be valid',  () => {
-        const validationres = validURL(validurl);
+        const validationres = urlValidater(validurl);
         expect(validationres).toBeDefined();
         expect(validationres).toBe(true);
     });
@@ -25,7 +25,7 @@ describe('The Validater should contain valid url' , () => {
 describe('Test "validURL()" for invalid url' , () => {
     var unvalidurl = "htp/www.toptal.com/front-end/front-end-design-principles";
     test('Should unvalid',  () => {
-        const unvalidationres = validURL(unvalidurl);
+        const unvalidationres = urlValidater(unvalidurl);
         expect(unvalidationres).toBeDefined();
         expect(unvalidationres).toBe(false);
     });

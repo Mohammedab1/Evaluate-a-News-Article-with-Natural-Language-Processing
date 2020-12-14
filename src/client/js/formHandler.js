@@ -28,7 +28,12 @@ function handleSubmit(event) {
   event.preventDefault();
 console.log("123");
   let text = document.getElementById("name").value;
-  sendURL('http://localhost:3000/text', text);
+  if(Client.urlValidater(text)){
+    console.log(" Submited");
+    sendURL('http://localhost:3000/text', text);
+  }else{
+    alert("Please Enter Valid URL");
+  }
 
 }
 
